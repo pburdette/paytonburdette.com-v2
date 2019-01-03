@@ -1,20 +1,18 @@
 <template>
   <section>
-    <div id="content"></div>
+    <div v-html="content"></div>
   </section>
 </template>
 
 <script>
-import marked from 'marked'
+import AboutContent from '../static/about.md'
 
 export default {
   name: 'About',
-  props: {
-    content: Object
-  },
-  mounted() {
-    const el = document.getElementById('content')
-    el.innerHTML = marked(this.content.items[0].fields.aboutMe)
+  data() {
+    return {
+      content: AboutContent
+    }
   }
 }
 </script>

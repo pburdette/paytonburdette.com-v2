@@ -4,14 +4,13 @@
   <div class="layout">
     <sidebar @changeComponent="changeComponent($event)" :navItems="navItems" />
     <div class="content">
-      <component :is="currentComponent" v-bind="currentProps" />
+      <component :is="currentComponent" />
     </div>
   </div>
 </main>
 </template>
 
 <script>
-import client from "~/plugins/contentful"
 import Toggle from '../components/Toggle'
 import Sidebar from '../components/Sidebar'
 import About from '../components/About'
@@ -39,20 +38,6 @@ export default {
       currentComponent: About
     }
   },
-  computed: {
-    currentProps() {
-      if(this.currentComponent === About) {
-        return { content: this.about }
-      } else if(this.currentComponent === Resume) {
-        return { 
-          jobs: this.jobs.items,
-          education: this.education.items
-        }
-      } else if(this.currentComponent === Projects) {
-        return { projects: this.projects.items }
-      } 
-    }
-  },
   methods: {
     changeComponent(component) {
       switch(component) {
@@ -70,33 +55,6 @@ export default {
           break
       }
     }
-  },  
-  async asyncData() {
-    let about = await client.getEntries({
-      content_type: 'about'
-    })
-
-    let projects = await client.getEntries({
-      content_type: 'project'
-    })
-
-    let education = await client.getEntries({
-      content_type: 'education'
-    })
-
-    let jobs = await client.getEntries({
-      content_type: 'job'
-    })
-
-    return {
-      about: about,
-      projects: projects,
-      education: education,
-      jobs: jobs
-    }
   }
 }
 </script>
-
-<style scoped>
-</style>

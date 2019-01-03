@@ -1,21 +1,6 @@
 <template>
-  <div class="resume">
-    <h1>Resume</h1>
-    <div 
-      v-for="(job, index) in jobs" 
-      :key="index"
-      class="job"
-    >
-    <h4>{{ job.fields.jobTitle }}</h4>
-    <p>{{ job.fields.jobLength }}</p>
-    <span v-html="parse(job.fields.jobHighlights)"></span>
-    </div>
-    <div class="education">
-      <h2>Education</h2>
-      <h4>{{ education[0].fields.schoolName }}</h4>
-      <p>{{ education[0].fields.degree }}</p>
-      <p>{{ education[0].fields.schoolLength }}</p>
-      <p>{{ education[0].fields.activities}}</p>
+  <div class="resume-wrapper">
+    <div v-html="content" class="resume">
     </div>
     <div class="skills">
       <h2>Skills</h2>
@@ -31,17 +16,13 @@
 </template>
 
 <script>
-import markedMixin from '../mixins/markedMixin.js'
+import ResumeContent from '../static/resume.md'
 
 export default {
   name: 'Resume',
-  props: {
-    jobs: Array,
-    education: Array
-  },
-  mixins: [markedMixin],
   data() {
     return {
+      content: ResumeContent,
       skills: [
         'HTML',
         'CSS',
@@ -59,29 +40,30 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.job {
-  margin-bottom: 30px;
-  h4 {
+<style lang="scss">
+.resume {
+  h1 {
     margin-bottom: 0;
   }
-  p {
-    margin-top: 0;
-  }
-}
 
-.education {
-  h4 {
+  h2 {
     margin-bottom: 0;
   }
+
+  h3 {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  
   p {
-    margin: 5px 0;
+    margin: 0;
   }
 }
 
 .skills {
   h2 {
     margin-top: 30px;
+    margin-bottom: 0;
   }
 }
 

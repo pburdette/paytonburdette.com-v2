@@ -1,4 +1,3 @@
-require('dotenv').config()
 const pkg = require('./package')
 
 module.exports = {
@@ -34,18 +33,17 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    "~/plugins/contentful",
-    "~/plugins/veevalidate"
-  ],
+  plugins: ["~/plugins/veevalidate"],
 
   /*
   ** Nuxt.js modules
   */
-  modules: ["@nuxtjs/dotenv"],
+  modules: ["@nuxtjs/markdownit"],
 
-  vendor: ["marked"],
-
+  markdownit: {
+    injected: true
+  },
+  
   /*
   ** Build configuration
   */
