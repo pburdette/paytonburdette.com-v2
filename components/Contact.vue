@@ -15,7 +15,7 @@
           type="text" 
           name="name" 
           placeholder="Full Name"
-          v-validate="'required|alpha'"
+          v-validate="'required|alpha_spaces'"
         >
         <span v-show="errors.has('name')" class="error">{{ errors.first('name')}}</span>
       </div>
@@ -25,7 +25,7 @@
           type="text" 
           name="subject" 
           placeholder="Subject"
-          v-validate="'required|alpha'"
+          v-validate="'required|alpha_spaces'"
         >
         <span v-show="errors.has('subject')" class="error">{{ errors.first('subject')}}</span>
       </div>
