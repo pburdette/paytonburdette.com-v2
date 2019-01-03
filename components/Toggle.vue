@@ -49,6 +49,7 @@ export default {
   width: 13px;
   height: 13px;
   border-radius: 50%;
+  border: none;
   margin-left: 10px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
