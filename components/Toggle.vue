@@ -2,11 +2,11 @@
   <div class="toggle">
     <div v-if="mode === 'Dark'" class="toggle-group">
       <span>Light</span>
-      <button @click="changeMode('Light')" class="light"></button>
+      <span @click="changeMode('Light')" class="light circle"></span>
     </div>
     <div v-else class="toggle-group">
       <span>Dark</span>
-      <button @click="changeMode('Dark')" class="dark"></button>
+      <span @click="changeMode('Dark')" class="dark circle"></span>
     </div>
   </div>
 </template>
@@ -41,16 +41,15 @@ export default {
   padding-right: 25px;
 }
 
-.toggle button {
-  margin: 0;
-  padding: 0;
-  outline: 0;
+.toggle .circle:before {
+  content: ' \25CF';
+  font-size: 22px;
+}
+
+
+.toggle .circle {
+  padding-left: 5px;
   cursor: pointer;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  border: none;
-  margin-left: 10px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }

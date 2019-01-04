@@ -43,7 +43,7 @@ body {
 }
 
 .dark {
-  background-color: #000;
+  color: #000;
 }
 
 p {
