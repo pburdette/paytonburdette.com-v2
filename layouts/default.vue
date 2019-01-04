@@ -111,7 +111,7 @@ main {
 
 @media (max-width: 700px) {
   main {
-    margin: 0 auto;
+    margin: 25px auto 75px auto;
   }
   .layout {
     grid-template-areas: 
