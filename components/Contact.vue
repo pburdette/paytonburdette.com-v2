@@ -4,7 +4,8 @@
     <p>Thanks for stopping by! I'm always down to chat about code or golf, so feel free to hit me up. Also check out my <a href="https://github.com/beardedpayton" target="_blank">GitHub</a>, or give me a follow on <a href="https://twitter.com/beardedpayton" target="_blank">Twitter</a>.</p>
     <form
       name="contact" 
-      method="POST" 
+      method="POST"
+      action="/success" 
       data-netlify="true"
       data-netlify-honeypot="bot-field"
     >
