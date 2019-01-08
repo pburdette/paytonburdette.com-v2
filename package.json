@@ -1,7 +1,7 @@
 {
-  "name": "personalsite",
+  "name": "paytonburdette.com-v2",
   "version": "1.0.0",
-  "description": "My mathematical Nuxt.js project",
+  "description": "My personal website built in Nuxt",
   "author": "beardedpayton",
   "private": true,
   "scripts": {
