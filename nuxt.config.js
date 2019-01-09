@@ -38,7 +38,12 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ["@nuxtjs/markdownit"],
+  modules: [
+    "@nuxtjs/markdownit",
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-132036682-1'
+    }]
+  ],
 
   markdownit: {
     injected: true
