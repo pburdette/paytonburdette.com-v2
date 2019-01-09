@@ -1,22 +1,15 @@
-# personalsite
+# paytonburdette.com-v2
 
-> My mathematical Nuxt.js project
+My personal website built with Nuxt and hosted on Netlify.
 
-## Build Setup
+## Features
+- Dynamic Components
+- Light / Dark Mode
+- Custom layout with CSS Grid
+- Fast!!!
 
-``` bash
-# install dependencies
-$ yarn install
+## Lighthouse Scores
+![screen shot 2019-01-09 at 1 37 57 pm](https://user-images.githubusercontent.com/20526900/50924467-a36dcd00-141d-11e9-92d1-57df9c7498ac.png)
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+## Page Speed
+<img width="760" alt="screen shot 2019-01-09 at 2 11 00 pm" src="https://user-images.githubusercontent.com/20526900/50924512-be404180-141d-11e9-9821-31e6999d95be.png">
