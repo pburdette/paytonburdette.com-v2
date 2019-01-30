@@ -2,6 +2,8 @@
 
 My personal website built with Nuxt and hosted on Netlify.
 
+[https://paytonburdette.com](https://paytonburdette.com)
+
 ## Features
 - Dynamic Components
 - Light / Dark Mode
