@@ -1,21 +1,25 @@
 # Resume
 
-### Lead Front-end Developer, Delta
-May/2015 - Present
+### Frontend Engineer, GitLab
+Aug/2019 - Present
+- Focus on building functionality related to the Continuous Integration stage of the DevOps lifecycle
+
+### Lead Frontend Developer, Delta
+May/2015 - Aug/2019
 
 - Leading the development of internal tools and core web applications
 - Focus on building marketing sites and applications in Vue.js
 - Built API in Node/Express that interfaces with a 2008 Microsoft SQL Server.
 - Focus on modern JavaScript and quality code
 
-### Front-end Developer, Delta
+### Frontend Developer, Delta
 Nov/2014 - May/2015
 
 - Designed and developed responsive marketing sites.
 - Setup and maintained Craft and Expression Engine CMS.
 - Focused on a balance of SEO, site speed and browser compatibility
 
-### Front-end Developer, NewSpring
+### Frontend Developer, NewSpring
 May/2013 - Jul/2014
 
 - Built user interfaces and helped develop core website
